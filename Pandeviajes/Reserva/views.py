@@ -30,6 +30,11 @@ class ReservaUpdate(UpdateView):
 class ReservaDelete(DeleteView):
     model = Reserva
     success_url= reverse_lazy(Reserva)   
+
+class ReservaListView(generic.ReservaListView):
+    model= Reserva
+    paginate_by=10
+
 class ReservaDetailView(generic.DetailView):
     model: Reserva 
 

@@ -3,7 +3,9 @@ from . import views
 
 urlpatterns=[
     path('', views.index, name='index'),
-    path('reserva/<int:pk', views.ReservaDetailView.as_view(), name='reserva_detail'),
+    path('reserva/<int:pk>', views.ReservaDetailView.as_view(), name='reserva_detail'),
+
+    path('Reserva/', views.ReservaListView.as_view(), name='Reservas')
 ]
 urlpatterns+=[
     path('reserva/create/', views.ReservaCreate.as_view(), name= 'reserva_create'),

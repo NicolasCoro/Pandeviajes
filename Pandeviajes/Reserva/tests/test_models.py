@@ -10,5 +10,5 @@ class ReservaTestCase(TestCase):
     
     def test(self):
         Contacto1= Contacto.objects.get(rut="asd@123.com")
-        self.assertEqual(Contacto1.Reserva.rut,"206270578")
+        self.assertEqual(Contacto1.Reserva.rut,"206270578") 
 
