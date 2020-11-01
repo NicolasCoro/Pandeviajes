@@ -1,0 +1,134 @@
+
+*
+{
+    margin: 2;
+    padding:3;
+}
+
+html
+{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body
+{
+    background-color: #eeeeee;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.grid
+{
+    display: grid;
+    width: 114em;
+    grid-gap: 6rem;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    align-items: flex-start;
+}
+
+.grid-item  
+{
+    background-color: #ffffff;
+    border-radius: 0.4rem;
+    overflow: hidden;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.grid-item:hover
+{
+    transform:translateY(-0.5%);
+    box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.5);
+}
+
+.card-img
+{
+    display: block;
+    width:100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.card-content
+{
+    padding: 3rem;
+}
+
+.card-header
+{
+    font-size: 3rem;
+    font-weight: 500;
+    color: #0d0d0d;
+    margin-bottom: 1.5rem;
+}
+
+.card-text
+{
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    line-height: 1.7;
+    color: #3d3d3d;
+    margin-bottom: 2.5rem;
+}
+/*
+.card-btn
+{
+    display: block;
+    width: 100%;
+    padding:1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: #0d3c68;
+    background-color: #78e4de;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+
+.card-btn span
+{
+    margin-left: 1rem;
+    transition: 0.2s;
+}
+
+.card-btn:hover,
+.card-btn:active
+{
+    background-color: #918acfd5;
+}
+
+.card-btn:hover span,
+.card-btn:active span
+{
+    margin-left: 1.5rem;
+}/*/
+
+.btn{
+    background-color: white;
+    border-color: rgb(0, 0, 0);
+    font-weight: bold;
+    align-self: center;
+    display: block;
+    width: 100%;
+    padding:1.5rem;
+    font-size: 6rem;
+    text-align: center;
+    color: #0d3c68;
+    border: none;
+    border-radius: 0.4rem;
+    transition: 0.2s;
+    cursor: pointer;
+    letter-spacing: 0.1rem;
+}
+.btn-primary{
+    color: black;
+}
+.container{
+    padding-top: 5rem;
+}

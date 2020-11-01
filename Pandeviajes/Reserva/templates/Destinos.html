@@ -1,0 +1,135 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        {% block title %}<title>Destinos</title>{% endblock %}
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        
+        {% load static %}
+        
+        <link rel="stylesheet" href="{% static 'css/Estilos3.css' %}"/>
+        <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" type="text/css">
+    </head>
+
+    <body>
+        <br>
+      <center>
+      <div id="alerta">
+            <h2>Atención estimados pasajeros</h1>
+            <p>
+              Debido a la contigencia por la pandemia de COVID-19, los viajes agendados para esta temporada serán reagendados una vez la contingencia sea controlada
+              en su totalidad. 
+            </p>
+          </div>
+        </center>
+
+        <div class="container">
+        <div class="grid">
+            <div class="grid-item">
+                <div class="card">
+                    <img class="card-img" src="{% static 'img/hawai.jpg' %}" alt="Hawai"/>
+                    <div class="card-content">
+                        <h1 class="card-header">Hawai</h1>
+                        <p class="card-text">
+                            Hawai, es una de las playas mas hermosas de Estados Unidos, rodeada de puro océano pacifico y con formación 
+                            proveniente de islas circundantes.
+                        </p>
+                        <a href="{%url 'Pasajes' %}" class="btn btn-primary">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img class="card-img" src="{% static 'img/paris.jpg' %}" alt="Paris"/>
+                    <div class="card-content">
+                        <h1 class="card-header">París</h1>
+                        <p class="card-text">
+                            París, una de las más bonitas ciudades del mundo, seduce en primer lugar por su excepcional patrimonio arquitectónico 
+                            y cultural que no deja de modernizarse y enriquecerse.
+                        </p>
+                        <a href="{%url 'Pasajes' %}" class="btn btn-primary">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img class="card-img" src="{% static 'img/moscu.jpg' %}" alt="Moscu"/>
+                    <div class="card-content">
+                        <h1 class="card-header">Moscú</h1>
+                        <p class="card-text">
+                            Moscú, capital de Rusia, es una de las ciudades más vibrantes y sorprendentes de Europa oriental. Ubicada a orillas del
+                             río Moscova, sus edificios y monumentos permiten viajar al pasado comunista y zarista.
+                        </p>
+                        <a href="{%url 'Pasajes' %}" class="btn btn-primary">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img class="card-img" src="{% static 'img/tokio.jpg' %}" alt="Tokio"/>
+                    <div class="card-content">
+                        <h1 class="card-header">Tokio</h1>
+                        <p class="card-text">
+                            Tokio es la enorme y rica capital de Japón, rebosante de cultura, comercio y, sobre todo, personas. El núcleo de la 
+                            zona urbana más poblada del mundo, Tokio es una metrópolis fascinante y dinámica que trae visiones de alta tecnología 
+                            del futuro lado a lado con atisbos del Japón antiguo.
+                        </p>
+                        <a href="{%url 'Pasajes' %}" class="btn btn-primary">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img class="card-img" src="{% static 'img/shangai.jpg' %}" alt="Shangai"/>
+                    <div class="card-content">
+                        <h1 class="card-header">Shangai</h1>
+                        <p class="card-text">
+                            Shanghái es una de las ciudades más pobladas del mundo y también de las más modernas. Sus impresionantes rascacielos 
+                            dominan el paisaje de una urbe que, sin embargo, todavía conserva una parte del espíritu de la China más tradicional.
+                        </p>
+                        <a href="{%url 'Pasajes' %}" class="btn btn-primary">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img class="card-img" src="{% static 'img/berlin.jpg' %}" alt="Berlin"/>
+                    <div class="card-content">
+                        <h1 class="card-header">Berlín</h1>
+                        <p class="card-text">
+                            Berlín es la ciudad capital de la República Federal de Alemania y una de las ciudades más bellas, liberales y 
+                            cosmopolitas del mundo. La población de la ciudad es de aproximadamente  3 millones de personas.
+                        </p>
+                        <a href="{%url 'Pasajes' %}" class="btn btn-primary">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+            <div class="grid-item">
+                <div class="card">
+                    <img class="card-img" src="{% static 'img/dubai.jpg' %}" alt="Dubai"/>
+                    <div class="card-content">
+                        <h1 class="card-header">Dubai</h1>
+                        <p class="card-text">
+                            Una interesante ciudad pujante, llena de edificios con arquitectura muy especial; cada uno distinto de otro con líneas
+                             impresionantes. Todo artificial; hay que tener en cuenta de que allí sólo había desierto. Hay muchísima entretención 
+                             para niños y adultos con infraestructura impresionante (pista de patinaje en hielo, pista de ski en nieve, acuario en 
+                             un mall, etc).
+                        </p>
+                        <a href="{%url 'Pasajes' %}" class="btn btn-primary">Cotizar</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </body>
+    
+
+    
+
+<html>
+{% endblock %}

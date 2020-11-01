@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1>Cliente que reserva: {{reserva}}</h1>
+<p>{{reserva.nombres}} {{reserva.apep}}</p>
+
+<div style="margin-left: 20px; margin-top:20px;">
+    <h4>Numero de reservas</h4>
+    <dl>
+        {%for reserva in reserva.nombre_set.all%}
+           <dt> ({{reserva.reserva.rut.set_all.count}})</dt>
+           <dd>{{reserva.summary}}</dd>
+        {%endfor%}
+    </dl>
+
+</div>
+{%endblock%}

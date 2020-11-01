@@ -1,0 +1,19 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1>Listado de reservas</h1>
+{% if reserva_list}
+<ul>
+    {% for reserva in reserva_list %}
+    <li>
+        <a href="{{Reserva.get_absolute_url }}">{{Reserva.nombres}}</a>({{Reserva.rut}})
+    </li>
+    {% endfor %}
+    
+</ul>
+{% else %}
+<p> no hay reservas en la empresa Pandeviajes.</p>
+{% endif %}
+
+{% endblock %}
