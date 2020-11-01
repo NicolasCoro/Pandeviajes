@@ -1,6 +1,8 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/Estilos5.css' %}">
 
 <h1>Borrar una reserva</h1>
 <p>Estas seguro de eliminar a: {{Reserva.nombres}}</p>

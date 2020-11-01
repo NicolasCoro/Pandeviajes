@@ -7,9 +7,9 @@ urlpatterns=[
     path('Pasajes/', views.Pasajes, name='Pasajes'),
     
     
-    path('Rese/<int:pk>', views.ReservaDetailView.as_view(), name='reserva_detail'),
+    path('Rese/<int:pk>/detail/', views.ReservaDetailView.as_view(), name='reserva_detail'),
 
-    path('Rese/', views.ReservaListView.as_view(), name='Reserva_list')
+    path('Rese/<int:pk>/list/', views.ReservaListView.as_view(), name='reserva_list')
 ]
 urlpatterns+=[
     path('Rese/create/', views.ReservaCreate.as_view(), name= 'reserva_create'),

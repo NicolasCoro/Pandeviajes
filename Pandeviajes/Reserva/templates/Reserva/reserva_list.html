@@ -2,18 +2,18 @@
 
 {% block content %}
 
-<h1>Listado de reservas</h1>
-{% if reserva_list}
-<ul>
-    {% for reserva in reserva_list %}
-    <li>
+    <h1>Listado de reservas</h1>
+    {% if reserva_list}
+    <ul>
+        {% for Reserva in reserva_list %}
+         <li>
         <a href="{{Reserva.get_absolute_url }}">{{Reserva.nombres}}</a>({{Reserva.rut}})
-    </li>
-    {% endfor %}
+        </li>
+        {% endfor %}
     
-</ul>
-{% else %}
-<p> no hay reservas en la empresa Pandeviajes.</p>
-{% endif %}
+    </ul>
+    {% else %}
+        <p> no hay reservas en la empresa Pandeviajes.</p>
+    {% endif %}
 
 {% endblock %}

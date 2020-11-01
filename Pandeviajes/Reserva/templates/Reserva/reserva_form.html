@@ -1,8 +1,10 @@
 {% extends "base_generic.html" %}
 
 {% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/Estilos5.css' %}">
 
-<form action="" method="post">
+<form action="" method="post" id="formulario">
     {% csrf_token %}
     <table>
         {{form.as_table}}
